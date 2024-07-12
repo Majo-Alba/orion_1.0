@@ -27,7 +27,8 @@ export default function Register() {
         event.preventDefault();
         // console.log(userDetails)
 
-        fetch('http://localhost:4000/register', {
+        fetch('https://orion-backend-z5yv.onrender.com/register', {
+        // fetch('http://localhost:4000/register', {
             method: "POST",
             body: JSON.stringify(userDetails),
             headers: {
