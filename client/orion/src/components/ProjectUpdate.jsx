@@ -454,8 +454,9 @@ export default function ProjectUpdate() {
             subtotal, total, ivaGenerado, anticipo, pagado, porPagar, plazosDePago, estatusContable, 
             pagoAdicional, fechaPago, bancoPago, comentarios, condicion,
             file, payment, extraPayment)
-
-        fetch("http://localhost:4000/updateProject", {
+        
+        fetch("https://orion-backend-z5yv.onrender.com/updateProject", {
+        // fetch("http://localhost:4000/updateProject", {
             method: "POST",
             crossDomain: true,
             headers: {
