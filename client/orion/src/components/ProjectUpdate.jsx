@@ -517,7 +517,8 @@ export default function ProjectUpdate() {
     const viewPDF = (e) => {
         event.preventDefault()
         console.log(file)
-        window.open(`http://localhost:4000/files/${file}`, "_blank", "noreferrer")
+        window.open(`https://orion-backend-z5yv.onrender.com/files/${file}`, "_blank", "noreferrer")
+        // window.open(`http://localhost:4000/files/${file}`, "_blank", "noreferrer")
     }
 
 
