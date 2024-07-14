@@ -87,7 +87,8 @@ function Accounting() {
     },[])
 
     const getAllProjects =()=> {
-        fetch('http://localhost:4000/project')
+        fetch('https://orion-backend-z5yv.onrender.com/project')
+        // fetch('http://localhost:4000/project')
         .then((response) => response.json())
         .then((data) => {
             setProjects(data)
@@ -107,7 +108,8 @@ function Accounting() {
     const deleteProject = (id, cliente, idProyecto) => {
         if(window.confirm(`Estás seguro que quieres borrar ${cliente} - ${idProyecto}`)) {
 
-            fetch("http://localhost:4000/deleteProject", {
+            fetch("https://orion-backend-z5yv.onrender.com/deleteProject", {
+            // fetch("http://localhost:4000/deleteProject", {
                 method: "POST",
                 crossDomain: true,
                 headers: {
