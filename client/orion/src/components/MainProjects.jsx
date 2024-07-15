@@ -221,7 +221,7 @@ function MainProjects() {
                     <div className="graphInfo">
                         <h1 className="graphTitle">Activos</h1>
                         <h1 className="graphAmountTitle">6/14</h1>
-                        <h1 className="graphMoneyAmount">$3,123,819.98</h1>
+                        <h1 className="graphMoneyAmount">$--</h1>
                     </div>
                     <ActiveChart></ActiveChart>
                 </div>
@@ -231,7 +231,7 @@ function MainProjects() {
                     <div className="graphInfo">
                         <h1 className="graphTitle">Terminados</h1>
                         <h1 className="graphAmountTitle">4/14</h1>
-                        <h1 className="graphMoneyAmount">$3,123,819.98</h1>
+                        <h1 className="graphMoneyAmount">$--</h1>
                     </div>
                     <FinishedChart></FinishedChart>
                 </div>
@@ -241,7 +241,7 @@ function MainProjects() {
                     <div className="graphInfo">
                         <h1 className="graphTitle">Dormidos</h1>
                         <h1 className="graphAmountTitle">3/14</h1>
-                        <h1 className="graphMoneyAmount">$3,123,819.98</h1>
+                        <h1 className="graphMoneyAmount">$--</h1>
                     </div>
                     <SleepingChart></SleepingChart>
                 </div>
@@ -251,7 +251,7 @@ function MainProjects() {
                     <div className="graphInfo">
                         <h1 className="graphTitle">Cancelados</h1>
                         <h1 className="graphAmountTitle">1/14</h1>
-                        <h1 className="graphMoneyAmount">$3,123,819.98</h1>
+                        <h1 className="graphMoneyAmount">$--</h1>
                     </div>
                     <CanceledChart></CanceledChart>
                 </div>
