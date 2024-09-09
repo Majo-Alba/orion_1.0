@@ -3,8 +3,8 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from "vite-plugin-pwa"
 
 // NEW SEP09
-import vue from '@vitejs/plugin-vue'
-import vitePluginRequire from "vite-plugin-require";
+// import vue from '@vitejs/plugin-vue'
+// import vitePluginRequire from "vite-plugin-require";
 // END SEP09
 
 // new jul04
@@ -38,8 +38,8 @@ import vitePluginRequire from "vite-plugin-require";
 export default defineConfig({
   plugins: [
     // NEW SEP09
-    vue(),
-		vitePluginRequire(),
+  //   vue(),
+		// vitePluginRequire(),
     // END SEP09
     react(),
     VitePWA({
