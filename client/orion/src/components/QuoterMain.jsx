@@ -19,8 +19,11 @@ import { faChartPie } from "@fortawesome/free-solid-svg-icons"
 import Caret from "./Icons/Caret";
 
 // new aug30
-import { jsPDF } from "jspdf";
-import autoTable from  'jspdf-autotable'
+// import { jsPDF } from "jspdf";
+// import autoTable from  'jspdf-autotable'
+
+import * as jsPDF from 'jspdf';
+import * as autoTable from 'jspdf-autotable';
 
 import cdeLogo from "../assets/images/cde-logo.png"
 import iconBuilding from "../assets/images/iconBuilding.png"
