@@ -28,7 +28,7 @@ export default function Header() {
       <ul>
         <li><a href= "/main">Inicio</a></li>
         <li><a href= "/accounting">Contable</a></li>
-        <li><a href= "/clientFile">Cliente</a></li>
+        <li><a href= "/clients">Cliente</a></li>
         <li><a href= "/invoicer">Cotizador</a></li>        
         {/* <li onClick={logout}><a href="/login">Salir <FontAwesomeIcon icon={faArrowRightFromBracket} /></a></li> */}
         <li onClick={logout}><a href="/login"><FontAwesomeIcon icon={faArrowRightFromBracket} /></a></li>

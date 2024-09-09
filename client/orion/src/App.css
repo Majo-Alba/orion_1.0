@@ -93,6 +93,512 @@ body{
   align-items: center; */
 }
 
+/* new jul18 */
+.clientHeader{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 21% 79%;
+}
+
+.clientTable{
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 97%;
+  height: 200px;
+  border-collapse: collapse;
+  /* justify-content: space-between; */
+}
+
+.clientBody{
+  display: grid;
+  grid-template-columns: 21% 79%;
+}
+
+.client-card {
+  /* background-color: white; */
+  /* margin-left: 0px; */
+  /* margin-right: 20px; */
+  /* width: 500px; */
+  /* width:50%; */
+
+  /* width: 97%; */
+  /* height: 200px; */
+  border-collapse: collapse;
+
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.companyName{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.client-secondRow {
+  display: grid;
+  /* grid-template-columns: 0.5fr 1.5fr 0.5fr 1.5fr; */
+  /* grid-template-columns: 15.5fr 12.5fr; */
+  grid-template-columns: 50% 50%;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.clientCard-client {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  /* background-color: rgb(187, 187, 247); */
+  justify-items: start;
+}
+
+.clientText{
+  margin-left: 15px;
+}
+
+.clientCard-location{
+  display: grid;
+  grid-template-columns: 5% 95%;
+  /* grid-template-columns: 5fr 200fr; */
+  /* background-color: rgb(244, 213, 218); */
+  justify-items: start;
+}
+
+.locationText{
+  margin-left: 9px;
+}
+
+.client-thirdRow{
+  display: grid;
+  /* grid-template-columns: 0.7fr; */
+  margin-top: 10px;
+}
+
+.client-cardInfo{
+  margin-bottom: 5px;
+  display: grid;
+  /* grid-template-columns: 0.7fr 1.5fr; */
+  grid-template-columns: 5% 95%;
+  justify-items: start;
+  /* align-content: start; */
+}
+
+.thirdRowText{
+  margin-left: 9px;
+}
+
+.previewWindow{
+  background-color: #e4eaf1;
+  /* padding-right: 500px; */
+  /* margin-left: 15px; */
+
+  height: 700px;
+  overflow-y: scroll;
+
+}
+
+.previewHeader{
+  /* width: 100%; */
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-left: 20px;
+
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.previewIncomes{
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.mainFiscalDivs{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.previewMainSpec{
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  width: 90%;
+}
+
+.mainSpecElement{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 5px;
+}
+
+.mainSpecAnswer{
+  font-weight: bold;
+}
+
+.previewContactSpec{
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  width: 95%;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  background-color: rgb(213, 211, 220);
+  border-radius: 20px;
+}
+
+.contactTitle{
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contactElement{
+  width: 50%;
+  display: grid;
+  grid-template-columns: 45% 55%;
+  margin-bottom: 5px;
+}
+
+.activeTitle{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 30px;
+  
+}
+
+.activeTable{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+}
+
+.tableDivScroll{
+  height: 200px;
+  overflow-y: scroll;
+
+}
+
+.recordTable {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 90.3%;
+  margin-left: 61px;
+
+  height: 25px;
+  overflow-y: scroll;
+}
+.testTd {
+  background-color: rgb(85, 63, 170);
+  visibility:hidden;
+  /* height: 0px; */
+  /* margin-bottom: 0px; */
+  /* margin-top: -100px; */
+  display:none;
+}
+
+
+/* end jul18 */
+
+/* NEW JUL29 */
+.quoterBody{
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.descriptionCardBase {
+  background-color: #e4eaf1;
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.descript-sectionTitle{
+  margin-left: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.descript-clientCard{
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+
+  padding: 15px;
+  width: 80%;
+  background-color: rgb(213, 211, 220);
+  border-radius: 10px;
+}
+
+.descriptDiv-iconText{
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.descript-Address{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.descriptDiv-textText {
+  margin-bottom: 4px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.descript-TermSpacing{
+  margin-bottom: 5px;
+}
+
+.locationDatesDiv{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.locationDiv{
+  display: grid;
+  grid-template-columns: 85%;
+}
+
+.locationDate-sectionTitle {
+  margin-left: 40px;
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.locationDate-labelInput{
+  display: grid;
+  /* grid-template-columns: 12.5% 88.5%; */
+  grid-template-columns: 15% 85%;
+
+  margin-bottom: 7px;
+  margin-right: 4.8px;
+}
+
+.locationDate-labelInputDouble{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 7px;
+}
+
+.locationDate-number{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-right: 5px;
+}
+
+.locationDate-extNumber{
+  margin-left: 10px;
+}
+
+.datesCard{
+  display: grid;
+  grid-template-columns: 100%;
+  /* margin-top: 100px; */
+  margin-bottom: 30px;
+
+  /* margin-bottom: 100px; */
+  margin-left: 40px;
+
+  padding: 15px;
+  width: 80%;
+  background-color: rgb(213, 211, 220);
+  border-radius: 10px;
+}
+
+.dates-labelInput{
+  display: grid;
+  grid-template-columns: 55% 45%;
+  margin-bottom: 7px;
+}
+
+.materialsTable {
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-top: 20px;
+  width: 80%;
+  height: 200px;
+  border-collapse: collapse;
+  /* justify-content: space-between; */
+}
+
+.sectionTotalsDiv{
+  width: 83%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-left: 80px;
+
+  background-color: #0b66c1;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.sectionsTotalLabel{
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  margin-left: 180px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sectionsTotalAmount{
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+  margin-left: 220px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.sectionTotals{
+  display: grid;
+  grid-template-columns: 100%;
+  width: 90%;
+  margin-left: 50px;
+  margin-right: 500px;
+
+  /* margin-left: 105px;
+  margin-right: 20px; */
+  background-color: #0b66c1;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 600;
+}
+
+.btnAddRow {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 1000px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  /* background-color: #1e90ff;   */
+  /* background-color: #0d397b;   */
+  background-color: #0b66c1;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .3s;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.btnAddRow:hover {
+  background-color: #1180ee;
+}
+
+.footer-totalsDiv{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.totalsDiv{
+  display: grid;
+  grid-template-columns: 100%;
+
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+
+  padding: 15px;
+  width: 60%;
+  background-color: rgb(213, 211, 220);
+  border-radius: 10px;
+}
+
+.totals-labelLabel{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin-bottom: 7px;
+}
+
+.totals-boldLabel{
+  font-weight: 700;
+}
+
+.totals-bolderLabel{
+  font-weight: 900;
+}
+
+.btnGeneratePDF {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  margin-left: 1000px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  /* background-color: #1e90ff;   */
+  /* background-color: #0d397b;   */
+  background-color: #0b66c1;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: 700;
+}
+
+.btnGeneratePDF:hover {
+  background-color: #1180ee;
+}
+
+.quoterDescriptPlaceholer {
+  font-style: italic;
+}
+
+.invoiceTableHeader {
+  display: grid;
+  grid-template-columns: 40% 15% 20% 20% 5%;
+}
+
+.invoiceItemRow {
+  display: grid;
+  grid-template-columns: 41% 15% 20% 20% 4%;
+}
+
+.invoiceItem-Item {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.invoiceItem-Amount {
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.invoiceItem-Price{
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.invoiceItem-Total{
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.invoiceItem-Trash{
+  margin-right: 10px;
+  margin-left: 25px;
+  margin-top: 5px;
+  color: #0d397b;
+}
+/* END JUL29 */
+
 .checkbox-container {
   display: flex;
   flex-wrap: wrap;
@@ -120,6 +626,17 @@ body{
   display: flex;
   /* flex-wrap: wrap; */
   /* background: purple; */
+}
+
+.fileCheckbox {
+  display: grid;
+  grid-template-columns: 220px 50px;
+}
+
+.fileBox {
+  margin-top: 17px;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 /* .container-login {
@@ -239,6 +756,7 @@ body{
   margin-left: 20px;
   padding-left: 20px;
   margin-right: 1080px;
+
 
   /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
   font-family: 'Courier New', Courier, monospace;
@@ -588,7 +1106,6 @@ th .header-container {
 
   padding-top: 5px;
   padding-bottom: 5px;
-
   /* background-color: lightcoral; */
   /* justify-content: space-between; */
   /* justify-content: center; */
@@ -673,7 +1190,6 @@ tr:nth-child(1) {
   background-clip: padding-box;
   background-color: rgb(234, 234, 234); 
   color: #0d397b;
-
   /* background-color: lightseagreen; */
 }
 

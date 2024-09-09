@@ -9,11 +9,12 @@ const userModel = require("../models/userModel")
 const projectModel = require("../models/projectModel")
 const verifyToken = require("../verifyToken")
 
-//NEW APR04
+// NEW AUG21
+const quoterModel = require("../models/quoterModel")
+// END AUG21
+
 const multer = require("multer")
-// NEW APR11
 const path = require('path')
-// END APR11
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
     // destination: function (req, res, cb) {
@@ -109,39 +110,20 @@ router.get('/getdata', verifyToken, (req,res) => {
 //NOTE TO SELF: /project COMES FROM WHAT YOU STATED IN NEWPROJECT.JS AXIOS ROUTE, IN THIS CASE LOCALHOST:4000/PROJECT
 // router.post('/project', (req,res) => {
 
-//NEW MAY14
-// router.post('/project', upload.any('myFiles'), (req,res) => {
-// router.post('/project', upload.array('file', 10), (req,res) => {
-router.post('/project', upload.single('file'), (req,res) => {
-//END MAY14
 
+// NEW JUL18
+router.post('/project', upload.single('file'), (req,res) => {
+    //END MAY14
+    
     // SINGLE FILE START
     let file = req.file.filename
     console.log(file)
-
+    
     let project = [req.body, req.file]
     console.log(project)
-
+    
     console.log({...req.body, file: req.file.filename})
     projectModel.create({...req.body, file: req.file.filename})
-    // SINGLE FILE END
-
-    // MULTIFILE START
-    // let files = req.files
-    // console.log(files)
-
-    // let project = [req.body, req.files]
-    // // console.log(project)
-
-    // console.log(project, files)
-    // // console.log({...req.body, ...req.files})
-    // projectModel.create({...req.body, ...req.files})
-
-    // console.log({...req.body, file: req.files.filename})
-    // projectModel.create({...req.body, file: req.files.filename})
-    // MULTIFILE END
-
-    // .then(result => res.json(result))
     .then((data) => {
         res.send({data:data,message:"Proyecto creado exitosamente"})
         console.log(data);
@@ -151,6 +133,99 @@ router.post('/project', upload.single('file'), (req,res) => {
         console.log(err);
     })
 })
+
+router.post('/project', upload.single('file'), (req,res) => {
+    
+    // SINGLE FILE START
+    let file = req.file.filename
+    console.log(file)
+    
+    let project = [req.body, req.file]
+    console.log(project)
+    
+    console.log({...req.body, file: req.file.filename})
+    projectModel.create({...req.body, file: req.file.filename})
+    .then((data) => {
+        res.send({data:data,message:"Proyecto creado exitosamente"})
+        console.log(data);
+        console.log("Project created!");
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+})
+// END JUL18
+
+//ASLEEP JUL18 - NEW MAY14
+// // router.post('/project', upload.any('myFiles'), (req,res) => {
+// // router.post('/project', upload.array('file', 10), (req,res) => {
+// router.post('/project', upload.single('file'), (req,res) => {
+// //END MAY14
+
+//     // SINGLE FILE START
+//     let file = req.file.filename
+//     console.log(file)
+
+//     let project = [req.body, req.file]
+//     console.log(project)
+
+//     console.log({...req.body, file: req.file.filename})
+//     projectModel.create({...req.body, file: req.file.filename})
+//     // SINGLE FILE END
+
+//     // MULTIFILE START
+//     // let files = req.files
+//     // console.log(files)
+
+//     // let project = [req.body, req.files]
+//     // // console.log(project)
+
+//     // console.log(project, files)
+//     // // console.log({...req.body, ...req.files})
+//     // projectModel.create({...req.body, ...req.files})
+
+//     // console.log({...req.body, file: req.files.filename})
+//     // projectModel.create({...req.body, file: req.files.filename})
+//     // MULTIFILE END
+
+//     // .then(result => res.json(result))
+//     .then((data) => {
+//         res.send({data:data,message:"Proyecto creado exitosamente"})
+//         console.log(data);
+//         console.log("Project created!");
+//     })
+//     .catch((err) => {
+//         console.log(err);
+//     })
+// })
+
+// ASLEEP JUL18 
+
+//API || ENDPOINT FOR POSTING A NEW QUOTE
+// NEW AUG21
+router.post('/quoter', (req,res) => {
+
+    // SINGLE FILE START
+    // let file = req.file.filename
+    // console.log(file)
+
+    let quoter = req.body
+    // let project = [req.body, req.file]
+    console.log(quoter)
+    
+    // console.log({...req.body, file: req.file.filename})
+    console.log({...req.body})
+    quoterModel.create({...req.body})
+    .then((data) => {
+        res.send({data:data,message:"Proyecto creado exitosamente"})
+        console.log(data);
+        console.log("Quote created!");
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+})
+// END AUG21
 
 router.get('/getPDF', (req, res) => {
     projectModel.findOne()
@@ -219,7 +294,7 @@ router.put('/project/:id', (req,res) => {
 //API || ENDPOINT FOR UPDATING PROJECT
 router.post("/updateProject", async (req, res) => {
     // MODIF Jun/04
-    const {id, cliente, numeroCliente, razonSocial, correoPrincipal, direccion, sucursal, 
+    const {id, empresa, cliente, numeroCliente, razonSocial, correoPrincipal, numeroTelefono, direccion, sucursal, ubicacion, giro,
         correoFacturacion, regimenFiscal, tipoFactura, metodoPago, formaPago, usoCFDI, 
         idProyecto, nombreEncargado, folioAceptado, inicioProceso, inicioTecnico, estatusProyecto, folioPDF, 
         subtotal, total, ivaGenerado, anticipo, pagado, porPagar, plazosDePago, estatusContable, 
@@ -229,12 +304,16 @@ router.post("/updateProject", async (req, res) => {
     try {
         await projectModel.updateOne({_id: id}, {
             $set: {
+                empresa: empresa,
                 cliente: cliente,
                 numeroCliente: numeroCliente,
                 razonSocial: razonSocial,
                 correoPrincipal: correoPrincipal,
+                numeroTelefono: numeroTelefono,
                 direccion: direccion,
                 sucursal: sucursal,
+                ubicacion: ubicacion,
+                giro: giro,
 
                 correoFacturacion: correoFacturacion,
                 regimenFiscal: regimenFiscal,

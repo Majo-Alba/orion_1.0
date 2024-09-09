@@ -27,6 +27,8 @@ import Private from './components/Private'
 // NEW JUN07
 import Chart from "react-apexcharts"
 import ApexCharts from 'apexcharts'
+import ClientsMain from './components/ClientsMain'
+import QuoterMain from './components/QuoterMain'
 // END JUN08
 
 function App() {
@@ -50,6 +52,10 @@ function App() {
 
             {/* NEW JUN04 */}
             <Route path='/accounting' element={<Private Component={Accounting}/>}/>
+            <Route path='/clients' element={<Private Component={ClientsMain}/>}/>
+            <Route path='/invoicer' element={<Private Component={QuoterMain}/>}/>
+
+
             {/* END JUN04 */}
 
             <Route path='*' element={<Notfound/>}/>
