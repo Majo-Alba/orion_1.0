@@ -2,6 +2,11 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from "vite-plugin-pwa"
 
+// NEW SEP09
+import vue from '@vitejs/plugin-vue'
+import vitePluginRequire from "vite-plugin-require";
+// END SEP09
+
 // new jul04
 // const manifestForPlugin = {
 //   manifest: {
@@ -32,6 +37,10 @@ import { VitePWA } from "vite-plugin-pwa"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    // NEW SEP09
+    vue(),
+		vitePluginRequire(),
+    // END SEP09
     react(),
     VitePWA({
       registerType:'autoUpdate',
