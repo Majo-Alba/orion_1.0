@@ -144,6 +144,12 @@ function QuoterMain() {
         text:""
     })
 
+    function autoTable(d: jsPDFDocument, options: UserOptions) {
+      const input = parseInput(d, options)
+      const table = _createTable(d, input)
+      _drawTable(d, table)
+    }
+
     function handleInput(event) {
         setQuoterDetails((prevState) => {
             return {...prevState, [event.target.name]:event.target.value}
