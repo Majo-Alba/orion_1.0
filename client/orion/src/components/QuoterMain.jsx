@@ -22,7 +22,7 @@ import Caret from "./Icons/Caret";
 import { jsPDF } from "jspdf";
 // import autoTable from  "jspdf-autotable";
 // import './node_modules/jspdf-autotable/jspdf-autotable.mjs'
-import * as autoTable from './node_modules/jspdf-autotable/dist/index';
+import * as autoTable from '/node_modules/jspdf-autotable/dist/index';
 
 
 import cdeLogo from "../assets/images/cde-logo.png"
