@@ -592,7 +592,7 @@ function QuoterMain() {
         // END SEP03
 
         doc.text("Materiales", 13,125);
-        doc.autoTable(doc, {
+        doc.autoTable({
         head: [['S.no','Item name', 'Quantity','Amount','Total']],
         body: newArray,
         startY: 130,
@@ -609,7 +609,7 @@ function QuoterMain() {
         // END SEP03
 
         doc.text("Mano de obra", 13, materialFinalY+ 20);
-        doc.autoTable(doc, {
+        doc.autoTable({
         head: [['S.no','Item name', 'Quantity','Amount','Total']],
         body: newLabourArray,
         startY: materialFinalY+ 25,
@@ -626,7 +626,7 @@ function QuoterMain() {
         // END SEP03
 
         doc.text("Misceláneos", 13, labourFinalY+ 20);
-        doc.autoTable(doc, {
+        doc.autoTable({
         head: [['S.no','Item name', 'Quantity','Amount','Total']],
         body: newMiscArray,
         startY: labourFinalY+25,
@@ -636,7 +636,7 @@ function QuoterMain() {
 
         // NEW SEP04
         doc.text("", 13, miscFinalY+ 20);
-        doc.autoTable(doc, {
+        doc.autoTable({
         body: totalSummaryArray,
         startY: miscFinalY+25,
         margin:{left: 100},
@@ -670,7 +670,7 @@ function QuoterMain() {
         doc.setFont('custom', 'bold');
         doc.setFontSize(11);
         doc.text("Terminos y Condiciones", 13, finalY+ 20);
-        doc.autoTable(doc, {
+        doc.autoTable({
         body: termsAndCondsArray,
         startY: finalY+25,
         columnStyles: {
