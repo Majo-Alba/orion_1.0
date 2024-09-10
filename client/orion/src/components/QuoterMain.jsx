@@ -144,10 +144,10 @@ function QuoterMain() {
         text:""
     })
 
-    function autoTable(d: jsPDFDocument, options: UserOptions) {
-      const input = parseInput(d, options)
-      const table = _createTable(d, input)
-      _drawTable(d, table)
+    function autoTable(jsPDFDocument, UserOptions) {
+      const input = parseInput(jsPDFDocument, UserOptions)
+      const table = _createTable(jsPDFDocument, input)
+      _drawTable(jsPDFDocument, table)
     }
 
     function handleInput(event) {
