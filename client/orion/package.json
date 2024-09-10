@@ -20,6 +20,8 @@
     "@mui/material": "^5.15.19",
     "apexcharts": "^3.49.1",
     "axios": "^1.6.8",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.3",
     "mongoose": "^8.4.3",
     "react": "^18.2.0",
     "react-apexcharts": "^1.4.1",
@@ -30,6 +32,8 @@
     "react-scripts": "^5.0.1",
     "react-text-mask": "^5.5.0",
     "text-mask-addons": "^3.8.0"
+    "vite-plugin-require": "^1.2.14",
+    "vue": "^3.5.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
