@@ -71,4 +71,12 @@ export default defineConfig({
       }
     })
   ],
+build: {
+    rollupOptions: {
+      external: [
+        "jsPDF", // ignore react stuff
+        "jspdf-autotable",
+      ],
+    },
+  },
 })
