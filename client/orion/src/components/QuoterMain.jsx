@@ -453,6 +453,7 @@ function QuoterMain() {
         
         //Intializing jspdf 
         const doc = new jsPDF()
+        doc.autoTable({ html: '.table' })
         let newArray = []
         // new sep01
         let newLabourArray = []
