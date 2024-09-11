@@ -22,7 +22,7 @@ import Caret from "./Icons/Caret";
 // import { jsPDF } from "jspdf";
 
 import * as jsPDF from 'jspdf';
-import 'jspdf-autotable';
+import '/jspdf-autotable';
 
 // var jsPDF = require('jspdf');
 // var autoTable = require('jspdf-autotable');
