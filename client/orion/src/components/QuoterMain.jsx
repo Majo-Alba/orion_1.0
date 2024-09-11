@@ -21,7 +21,7 @@ import Caret from "./Icons/Caret";
 // new aug30
 // import { jsPDF } from "jspdf";
 var jsPDF = require('jspdf');
-var autoTable = require('jspdf-autotable');
+// var autoTable = require('jspdf-autotable');
 // import autoTable from  "jspdf-autotable";
 // import autoTable from './node_modules/jspdf-autotable';
 // import * as autoTable from '/node_modules/jspdf-autotable/dist/index';
