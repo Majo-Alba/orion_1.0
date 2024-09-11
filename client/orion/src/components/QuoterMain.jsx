@@ -19,10 +19,8 @@ import { faChartPie } from "@fortawesome/free-solid-svg-icons"
 import Caret from "./Icons/Caret";
 
 // new aug30
-// import { jsPDF } from "jspdf";
-
-import * as jsPDF from 'jspdf';
-// import 'jspdf-autotable';
+import { jsPDF } from "jspdf";
+const { autoTable } = require('jspdf-autotable')
 
 // var jsPDF = require('jspdf');
 // var autoTable = require('jspdf-autotable');
