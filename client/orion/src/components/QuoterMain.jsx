@@ -20,7 +20,7 @@ import Caret from "./Icons/Caret";
 
 // new aug30
 import { jsPDF } from "jspdf";
-const { autoTable } = require('jspdf-autotable')
+import 'jspdf-autotable';
 
 // var jsPDF = require('jspdf');
 // var autoTable = require('jspdf-autotable');
