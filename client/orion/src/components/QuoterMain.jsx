@@ -22,8 +22,8 @@ import Caret from "./Icons/Caret";
 // import jsPDF from 'jspdf';
 // import autoTable from 'jspdf-autotable'
 
-import jsPDF from 'jspdf'
-import 'jspdf-autotable'
+// import jsPDF from 'jspdf'
+// import 'jspdf-autotable'
 // import { AutoTable } from '../jspdf-autotable';
 
 
@@ -471,8 +471,11 @@ function QuoterMain() {
         event.preventDefault();
         
         //Intializing jspdf 
+        import jsPDF from 'jspdf'
+        import 'jspdf-autotable'
+        
         const doc = new jsPDF()
-        doc.autoTable({ html: '.table' })
+        // doc.autoTable({ html: '.table' })
         let newArray = []
         // new sep01
         let newLabourArray = []
