@@ -471,9 +471,6 @@ function QuoterMain() {
         event.preventDefault();
         
         //Intializing jspdf 
-        import jsPDF from 'jspdf'
-        import 'jspdf-autotable'
-        
         const doc = new jsPDF()
         // doc.autoTable({ html: '.table' })
         let newArray = []
