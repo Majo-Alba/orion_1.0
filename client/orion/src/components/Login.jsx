@@ -88,21 +88,6 @@ export default function Login() {
             <br></br>
             <Footer/>
         </section>
-
-        // <section className="container">
-        // <form className="form" onSubmit={handleSubmit}>
-        //     <h1>¡Bienvenido!</h1>
-        //     {/* <h3>Entra a tu portal</h3> */}
-
-        //     <input className="inp" required type="email" onChange={handleInput} placeholder="Correo Electrónico..." name="email" value={userCreds.email}></input>
-        //     <input className="inp" minLength={8} type="password" onChange={handleInput} placeholder="Contraseña..." name="contraseña" value={userCreds.contraseña}></input>
-
-        //     <button className="btn">Entrar</button>
-        //     <p>¿Aún no te registras? ? <Link to="/register">Crea una cuenta</Link></p>
-
-        //     <p className={message.type}>{message.text}</p>
-        // </form>
-        // </section>
     )
     
 }
@@ -214,8 +199,8 @@ export default function Login() {
         //     <p className={message.type}>{message.text}</p>
         // </form>
         // </section>
-    )
+//     )
     
-}
+// }
 
 // ORIGINAL COMMIT END
