@@ -7,7 +7,7 @@ class CanceledChart extends React.Component {
 
       this.state = {
       
-        series: [25, 100],
+        series: [1,8],
         options: {
           chart: {
             type: 'donut',
@@ -40,7 +40,7 @@ class CanceledChart extends React.Component {
     render() {
       return (
         <div>
-          <div id="chart">
+          <div id="chart" className="graphDivSize">
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" />
           </div>
           <div id="html-dist"></div>
