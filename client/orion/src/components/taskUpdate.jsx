@@ -101,7 +101,8 @@ export default function TaskUpdate() {
         // modif may02
         console.log("Print" + prioridadTarea, nombreTarea, descripcionTarea, encargadoTarea, fechaAsignacion, clienteTarea, estatusTarea)
 
-        fetch("http://localhost:4000/updateTask",{
+        fetch("https://orion-backend-z5yv.onrender.com/updateTask",{
+        // fetch("http://localhost:4000/updateTask",{
             method: "POST",
             crossDomain: true,
             headers: {
