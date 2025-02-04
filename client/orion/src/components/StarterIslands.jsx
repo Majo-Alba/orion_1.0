@@ -1,3 +1,62 @@
+// NEW COMMIT
+
+import { useState } from "react"
+import { Link } from "react-router-dom"
+
+import { faHouse, faFileInvoice, faUser, faCalculator, faGear, faMoneyBillTransfer, faHelmetSafety} from "@fortawesome/free-solid-svg-icons"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import Footer from "./Footer"
+
+export default function StarterIsland() {
+    return (
+        <section>
+            <div className="islandPageDiv">
+            <h1 className="welcomeSign">ORION</h1>
+            <h2 className="welcomeSlogan">Trazando el rumbo <br></br>de tu negocio</h2>
+            {/* <nav className="menu"> */}
+            <nav>
+                <input className="menu-toggler" type="checkbox"/>
+                <label htmlFor="menu-toggler"></label>
+                {/* <label className="welcomeSign">Bienvenido</label> */}
+                <ul>
+                    <li className="menu-item">
+                        <a className="fas fa-cat" href="/main"><FontAwesomeIcon icon={faHelmetSafety}/></a>
+                        <label className="menuTags">Proyectos</label>
+                    </li>
+                    <li className="menu-item">
+                        <a className="fas fa-cat" href="/accounting"><FontAwesomeIcon icon={faMoneyBillTransfer}/></a>
+                        <label className="menuTags">Contable</label>
+                    </li>
+                    <li className="menu-item">
+                        <a className="fas fa-cat" href="/clients"><FontAwesomeIcon icon={faUser}/></a>
+                        <label className="menuTags">Clientes</label>
+                    </li>
+                    <li className="menu-item">
+                        <a className="fas fa-cat" href="/invoicer"><FontAwesomeIcon icon={faCalculator}/></a>
+                        <label className="menuTags">Cotizador</label>
+                    </li>
+                    <li className="menu-item">
+                        <a className="fas fa-cat" href="/tasks"><FontAwesomeIcon icon={faGear}/></a>
+                        <label className="menuTags">Tareas</label>
+                    </li>
+                    {/* <li className="menu-item">
+                        <a className="fas fa-cat" href="/project"><FontAwesomeIcon icon={faFileInvoice}/></a>
+                        <label className="menuTags">Agregar Proyecto</label>
+                    </li> */}
+                </ul>
+            </nav>
+            <br></br>
+            <Footer/>
+            </div>
+        </section>  
+    )
+}
+// NEW COMMIT END
+
+// ORIGINAL COMMIT
+
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -49,3 +108,5 @@ export default function StarterIsland() {
         </section>  
     )
 }
+
+// ORIGINAL COMMIT END
