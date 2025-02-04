@@ -111,7 +111,8 @@ function ClientsMain() {
     },[])
 
     const getAllProjects =()=> {
-        fetch('http://localhost:4000/project')
+        fetch("https://orion-backend-z5yv.onrender.com/project")
+        // fetch('http://localhost:4000/project')
         .then((response) => response.json())
         .then((data) => {
             setProjects(data)
