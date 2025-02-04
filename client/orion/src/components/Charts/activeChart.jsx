@@ -1,13 +1,14 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
 
+
 class ActiveChart extends React.Component {
     constructor(props) {
       super(props);
 
       this.state = {
       
-        series: [14,3],
+        series: [4,8],
         options: {
           chart: {
             type: 'donut',
@@ -40,7 +41,7 @@ class ActiveChart extends React.Component {
     render() {
       return (
         <div>
-          <div id="chart">
+          <div id="chart" className="graphDivSize"> 
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" />
           </div>
           <div id="html-dist"></div>
