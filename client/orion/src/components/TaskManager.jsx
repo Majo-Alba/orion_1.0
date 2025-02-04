@@ -150,7 +150,7 @@ function TaskManager() {
         if(window.confirm(`Estás seguro que quieres borrar la tarea ${nombreTarea} de ${encargadoTarea}`)) {
             
             fetch("https://orion-backend-z5yv.onrender.com/deleteTask", {
-            fetch("http://localhost:4000/deleteTask", {
+            // fetch("http://localhost:4000/deleteTask", {
                 method: "POST",
                 crossDomain: true,
                 headers: {
