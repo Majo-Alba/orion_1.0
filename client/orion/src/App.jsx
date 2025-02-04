@@ -1,3 +1,5 @@
+// NEW COMMIT
+
 import './App.css'
 import Projects from './components/Projects'
 //NEW
@@ -29,6 +31,8 @@ import Chart from "react-apexcharts"
 import ApexCharts from 'apexcharts'
 import ClientsMain from './components/ClientsMain'
 import QuoterMain from './components/QuoterMain'
+import TaskManager from './components/TaskManager'
+import TaskUpdate from './components/taskUpdate'
 // END JUN08
 
 function App() {
@@ -54,6 +58,8 @@ function App() {
             <Route path='/accounting' element={<Private Component={Accounting}/>}/>
             <Route path='/clients' element={<Private Component={ClientsMain}/>}/>
             <Route path='/invoicer' element={<Private Component={QuoterMain}/>}/>
+            <Route path='/tasks' element={<Private Component={TaskManager}/>}/>
+            <Route path='/updateTask' element={<TaskUpdate/>}/>
 
 
             {/* END JUN04 */}
@@ -71,3 +77,82 @@ function App() {
 
 
 export default App
+// NEW COMMIT END
+
+// ORIGINAL COMMIT
+
+// import './App.css'
+// import Projects from './components/Projects'
+// //NEW
+// import {BrowserRouter, Routes, Route} from 'react-router-dom'
+// import Register from './components/Register'
+// import Login from './components/Login'
+// import Notfound from './components/NotFound'
+// import NewProject from './components/NewProject'
+// // NEW FEB17
+// // import ProjectEdit from './components/ProjectEdit'
+// import ProjectUpdate from './components/ProjectUpdate'
+// // import ProjectModif from './components/ProjectModif'
+// // END FEB17
+
+// import MainProjects from './components/MainProjects'
+// import StarterIsland from './components/StarterIslands'
+
+// // NEW JUN04
+// import Accounting from './components/Accounting'
+// // END JUN04
+
+// import { UserContext } from './contexts/UserContext'
+// import { useState } from 'react'
+// import Private from './components/Private'
+// //END
+
+// // NEW JUN07
+// import Chart from "react-apexcharts"
+// import ApexCharts from 'apexcharts'
+// import ClientsMain from './components/ClientsMain'
+// import QuoterMain from './components/QuoterMain'
+// // END JUN08
+
+// function App() {
+
+//   const [loggedUser, setLoggedUser] = useState(localStorage.getItem("orion-user"))
+
+//   return (
+//     <>
+//       <UserContext.Provider value = {{loggedUser,setLoggedUser}}>
+
+//         <BrowserRouter>
+//           <Routes>
+//             <Route path='/' element={<Login/>}/>
+//             <Route path='/login' element={<Login/>}/>
+//             <Route path='/register' element={<Register/>}/>
+//             {/* <Route path='/main' element={<Private Component={Projects}/>}/> */}
+//             <Route path='/main' element={<Private Component={MainProjects}/>}/>
+//             <Route path='/initial' element={<Private Component={StarterIsland}/>}/>
+//             <Route path='/project' element={<Private Component={NewProject}/>}/>
+//             <Route path='/updateProject' element={<ProjectUpdate/>}/>
+
+//             {/* NEW JUN04 */}
+//             <Route path='/accounting' element={<Private Component={Accounting}/>}/>
+//             <Route path='/clients' element={<Private Component={ClientsMain}/>}/>
+//             <Route path='/invoicer' element={<Private Component={QuoterMain}/>}/>
+
+
+//             {/* END JUN04 */}
+
+//             <Route path='*' element={<Notfound/>}/>
+//           </Routes>
+//         </BrowserRouter>
+        
+//       </UserContext.Provider>
+//     </>
+//   )
+  
+// }
+
+
+
+// export default App
+
+// ORIGINAL COMMIT END
