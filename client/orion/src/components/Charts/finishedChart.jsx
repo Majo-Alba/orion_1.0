@@ -7,7 +7,7 @@ class FinishedChart extends React.Component {
 
       this.state = {
       
-        series: [44,22],
+        series: [2,8],
         options: {
           chart: {
             type: 'donut',
@@ -40,7 +40,7 @@ class FinishedChart extends React.Component {
     render() {
       return (
         <div>
-          <div id="chart">
+          <div id="chart" className="graphDivSize">
             <ReactApexChart options={this.state.options} series={this.state.series} type="donut" />
           </div>
           <div id="html-dist"></div>
