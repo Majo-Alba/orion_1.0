@@ -222,8 +222,9 @@ function QuoterMain() {
         event.preventDefault();
         console.log("Generate PDF button clicked")
         console.log(quoterDetails)
-
-        fetch('http://localhost:4000/quoter', {
+        
+        fetch("https://orion-backend-z5yv.onrender.com/quoter", {
+        // fetch('http://localhost:4000/quoter', {
             method: "POST",
             body: JSON.stringify(quoterDetails),
             headers: {
@@ -897,7 +898,8 @@ function QuoterMain() {
     },[])
 
     const getAllProjects =()=> {
-        fetch('http://localhost:4000/project')
+        fetch("https://orion-backend-z5yv.onrender.com/project")
+        // fetch('http://localhost:4000/project')
         .then((response) => response.json())
         .then((data) => {
             setProjects(data)
