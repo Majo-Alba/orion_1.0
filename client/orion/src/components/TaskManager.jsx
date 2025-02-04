@@ -97,7 +97,8 @@ function TaskManager() {
     },[])
 
     const getAllProjects =()=> {
-        fetch('http://localhost:4000/tasker')
+        fetch("https://orion-backend-z5yv.onrender.com/tasker")
+        // fetch('http://localhost:4000/tasker')
         .then((response) => response.json())
         .then((data) => {
             setProjects(data)
@@ -147,7 +148,7 @@ function TaskManager() {
     const deleteTask = (id, nombreTarea, encargadoTarea) => {
         if(window.confirm(`Estás seguro que quieres borrar la tarea ${nombreTarea} de ${encargadoTarea}`)) {
             
-            // fetch("https://orion-backend-z5yv.onrender.com/deleteProject", {
+            fetch("https://orion-backend-z5yv.onrender.com/deleteTask", {
             fetch("http://localhost:4000/deleteTask", {
                 method: "POST",
                 crossDomain: true,
